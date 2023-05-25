@@ -19,6 +19,25 @@ fn main() {
     // -> float number :: f32, i64 
     // -> boolean :: true , false
     // -> catrecter :: char 
+
+    //float number
+    // -- declear method 1
+    //let o:f32 = 2.1;
+    //let oo:f64 = 23.3;
+    // -- declear method 2
+    let o = 2.1f32;
+    let oo = 23.3f64;
+    println!("{}", o);
+    println!("{}", oo);
+
+    // boolean
+    let b:bool = true;
+    let bb:bool = false;
+    println!("{} {}", b, bb);
+
+    // character
+    let cc:char = 'H';
+    println!("character value: {cc}");
 }
 
 // func :: see how to declear function
