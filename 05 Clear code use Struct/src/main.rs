@@ -1,12 +1,21 @@
-fn main(){
-    let rec1:(u32, u32) = (32, 30);
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
 
-    println!("{}", area(rec1));
+fn main(){
+    let rec1 = Rectangle{
+        width: 50,
+        height: 11,
+    };
+
+    println!("{}", area( &rec1)); // pass by refercence
+    println!("width: {}  height: {}", rec1.width, rec1.height);
 
 }
 
-fn area(rectangle: (u32, u32))-> u32{
-    rectangle.0 * rectangle.1
+fn area(rectangle: &Rectangle)-> u32{
+    rectangle.width * rectangle.height
 }
 
 
