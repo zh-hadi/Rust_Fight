@@ -2,11 +2,12 @@ fn main(){
     let width = 20;
     let height = 15;
 
+    println!("{}", area(width, height));
 
-    let area = width * height;
+}
 
-    println!("{}", area);
-
+fn area(width: u32, height: u32)-> u32{
+    width * height
 }
 
 
