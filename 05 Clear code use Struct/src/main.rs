@@ -1,12 +1,12 @@
 fn main(){
-    let rec1:(u32, u32) = (32, 20);
+    let rec1:(u32, u32) = (32, 30);
 
-    println!("{}", area(rec1.0, rec1.1));
+    println!("{}", area(rec1));
 
 }
 
-fn area(width: u32, height: u32)-> u32{
-    width * height
+fn area(rectangle: (u32, u32))-> u32{
+    rectangle.0 * rectangle.1
 }
 
 
