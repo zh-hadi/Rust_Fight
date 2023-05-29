@@ -1,8 +1,7 @@
 fn main(){
-    let width = 20;
-    let height = 15;
+    let rec1:(u32, u32) = (32, 20);
 
-    println!("{}", area(width, height));
+    println!("{}", area(rec1.0, rec1.1));
 
 }
 
