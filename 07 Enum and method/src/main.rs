@@ -18,6 +18,12 @@ struct Student {
     Roll: u32,
 }
 
+impl Student{
+    fn School(&self){
+        println!("Balia Vekutia High School.");
+    }
+}
+
 // method in struct 
 
 fn main() {
@@ -34,6 +40,8 @@ fn main() {
     };
 
     dbg!(&s1);
+    println!("School Name: ");
+    s1.School();
     println!("{}", &s1.Name);
 
     // owner ship is most important thing in rust 
