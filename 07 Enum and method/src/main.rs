@@ -5,10 +5,41 @@ enum IpAddr { // declear enum
     Ip4(String),
     Ip6(String),
 }
+// method in enum
+impl IpAddr {
+    fn Ip4_Example(&self){ // we can return value -> return type
+        println!("127.0.0.1");
+    }
+}
+
+#[derive(Debug)]
+struct Student {
+    Name: String,
+    Roll: u32,
+}
+
+// method in struct 
 
 fn main() {
     // enum value declear
     let home_ip = IpAddr::Ip4(String::from("127.0.0.1"));
-    dbg!(home_ip);
+    dbg!(&home_ip);
+
+    home_ip.Ip4_Example();
+
+    // struct declear
+    let s1 = Student {
+        Name: String::from("Hadiuzzaman"),
+        Roll: 34,
+    };
+
+    dbg!(&s1);
+    println!("{}", &s1.Name);
+
+    // owner ship is most important thing in rust 
+    // 1. reference 
+    // 2. borrow 
+
+    // In rust one value is one owner 
 
 }
