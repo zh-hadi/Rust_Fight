@@ -24,6 +24,13 @@ impl Student{
     }
 }
 
+// practice rust enum
+#[derive(Debug)]
+enum Gender {
+    Male(String),
+    Female(String),
+}
+
 // method in struct 
 
 fn main() {
@@ -43,6 +50,10 @@ fn main() {
     println!("School Name: ");
     s1.School();
     println!("{}", &s1.Name);
+
+
+    let st1 = Gender::Male(String::from("Hadiuzzaman"));
+    dbg!(st1);
 
     // owner ship is most important thing in rust 
     // 1. reference 
